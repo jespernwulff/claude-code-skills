@@ -13,8 +13,8 @@ prose. Read a skill before you run it: it is short, and it is the whole thing.
 | Skill | What it does | Written by | Where it goes |
 |---|---|---|---|
 | `review-paper` | Six critics write a referee report on a LaTeX paper, before you submit. | [Claes Bäckman](https://github.com/claesbackman/AI-research-feedback); one sentence changed here | `~/.claude/commands/review-paper.md` |
-| `session-init` | Reads the project's `CLAUDE.md` first, rewrites `README.md`, seeds four rules, keeps a dated session log. | me | `~/.claude/skills/session-init/SKILL.md` |
-| `paper-code-check` | Lists every checkable claim in a paper, traces each to the code and its output, gives a verdict with file and line, then sends in a sceptic. | me, after an idea by Claes Bäckman | `~/.claude/skills/paper-code-check/SKILL.md` |
+| `session-init` | Reads the project's `CLAUDE.md` first, rewrites `README.md`, seeds four rules, keeps a dated session log. | me, inspired by Scott Cunningham | `~/.claude/skills/session-init/SKILL.md` |
+| `paper-code-check` | Lists every checkable claim in a paper, traces each to the code and its output, gives a verdict with file and line, then sends in a sceptic. | me, inspired by Claes Bäckman | `~/.claude/skills/paper-code-check/SKILL.md` |
 
 **Before you run any of them:** the review skills send your paper and your code to the
 model. Check first what you may share: unpublished work, personal data.
@@ -126,6 +126,8 @@ or when the model enters a project that already has a `CLAUDE.md`. You can also 
 them; the model enforces them on itself, and the cap of eight entries has been known to
 be ignored.
 
+**Provenance.** My own text, inspired by Scott Cunningham.
+
 ### `paper-code-check` — does the code do what the paper says?
 
 The errors that matter do not crash: the paper says 2,000 simulation runs, the script
@@ -158,7 +160,7 @@ re-runs expensive computations.
 or ask in plain words: "does the code do what the paper says?", "check my numbers before
 submission".
 
-**Provenance.** My own text, written in July 2026. The idea came from Claes Bäckman's
+**Provenance.** My own text, written in July 2026, inspired by Claes Bäckman's
 [`review-paper-code`](https://github.com/claesbackman/AI-research-feedback) of April
 2026, which maps a paper's main empirical claims to its code and reviews the code's
 reproducibility. The two files share no text; this one starts from a complete ledger of
